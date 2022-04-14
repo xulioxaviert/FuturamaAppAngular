@@ -1,3 +1,4 @@
+import { LinkPipe } from './pipe/link.pipe';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,6 +19,7 @@ import { CastComponent } from './pages/cast/cast.component';
     EpisodesComponent,
     HeaderComponent,
     CastComponent,
+    LinkPipe
     
   ],
   imports: [
