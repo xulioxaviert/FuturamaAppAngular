@@ -9,6 +9,7 @@ import { DetailsComponent } from './pages/characters/details/details.component';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { CastComponent } from './pages/cast/cast.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CastComponent } from './pages/cast/cast.component';
     EpisodesComponent,
     HeaderComponent,
     CastComponent,
-    LinkPipe
+    LinkPipe,
+    HomeComponent
     
   ],
   imports: [

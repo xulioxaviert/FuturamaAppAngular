@@ -1,3 +1,4 @@
+import { HomeComponent } from './pages/home/home.component';
 import { DetailsComponent } from './pages/characters/details/details.component';
 import { CastComponent } from './pages/cast/cast.component';
 import { CharactersComponent } from './pages/characters/characters.component';
@@ -6,7 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'characters', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'characters', component: CharactersComponent },
   { path: 'cast', component: CastComponent },
   { path: 'episodes', component: EpisodesComponent },

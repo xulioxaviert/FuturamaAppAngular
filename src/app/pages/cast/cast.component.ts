@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { CastService } from './service/cast.service';
 
@@ -12,7 +13,9 @@ export class CastComponent implements OnInit {
   return this.castService.cast
 }
 
-  constructor(private castService: CastService ) { }
+  constructor(private castService: CastService) {
+    
+   }
 
   ngOnInit(): void {
   }

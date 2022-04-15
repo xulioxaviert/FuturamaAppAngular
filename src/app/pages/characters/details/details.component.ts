@@ -10,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
+
+
 character!: Characters
 
   constructor(private detailsService: CharactersService, private activeRoute: ActivatedRoute) { }

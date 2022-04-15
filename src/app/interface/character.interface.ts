@@ -1,4 +1,3 @@
-
 export interface Characters {
     name: Name;
     images: Images;
