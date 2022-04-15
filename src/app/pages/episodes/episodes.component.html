@@ -1,13 +1,14 @@
 
 <div class="container-card">
     <div *ngFor="let item of episodes" class="card">
-        <div class="card">
+        
             <h2>Title: {{item.title}}</h2>
-            <h3>Writers: {{item.writers}}</h3>
-            <h3>{{item.originalAirDate}}</h3>
-            <h4>Description:</h4>
+            <h3>Description:</h3>
             <p>{{item.desc}}</p>
+            <h4>Writers: {{item.writers}}</h4>
+            <h4>{{item.originalAirDate}}</h4>
+            <p>Episode number: {{item.number}}</p>
             
-        </div>
+        
     </div>
 </div>

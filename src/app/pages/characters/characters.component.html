@@ -1,9 +1,9 @@
 <div class=container-gallery>
     <div *ngFor="let item of characters" class=container-card>
-        <div class="card">
-            <img [routerLink]="item | link"  src={{item.images.main}} [alt]="item.name.first">
+        <div [routerLink]="item | link" class="card">
+            <img   src={{item.images.main}} [alt]="item.name.first">
             <div class="card-body">
-                <h3>Name: {{item.name.first}} {{item.name.middle}} {{item.name.last}} </h3>
+                <h2>Name: {{item.name.first}} {{item.name.middle}} {{item.name.last}} </h2>
                 <h4>Gender: {{item.gender}}</h4>
                 <h4>Species: {{item.species}}</h4>
                 <h4>Planet: {{item.homePlanet}}</h4>

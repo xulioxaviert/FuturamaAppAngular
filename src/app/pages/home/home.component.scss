@@ -1,0 +1,35 @@
+.container-home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    
+
+    h1 {
+        font-family: 'Bebas Neue',
+            cursive;
+        text-align: center;
+        color: #5FD1D1;
+    }
+
+    .container-home-img {
+        display: flex;
+        width: 100%;
+      
+        
+        img {
+            
+            width: 100%;
+        }
+    }
+
+    .container-home-paragraph {
+        margin: 0 7%;
+        text-align: justify;
+    }
+
+    p {
+        font-family: 'Quicksand',
+            sans-serif;
+    }
+
+}

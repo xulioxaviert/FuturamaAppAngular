@@ -1,0 +1,51 @@
+.container-card {
+    display: flex;
+    text-align: center;
+    z-index: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    margin-top: 125px;
+    justify-content: space-evenly;
+
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-family: 'Quicksand',
+        sans-serif;
+    }
+
+    h3 {
+        padding: 0 5px;
+        font-family: 'Quicksand',
+        sans-serif;
+        font-weight: bold;
+        text-decoration: underline;
+
+    }
+
+    p {
+        padding: 0 10%;
+        font-family: 'Quicksand',
+        sans-serif;
+    }
+
+
+    h4 {
+        margin: 0;
+        padding: 3px 0;
+        font-family: 'Quicksand',
+        sans-serif;
+    }
+
+}

@@ -1,12 +1,12 @@
-<div class=container-gallery>
-    <div *ngFor="let item of cast" class=container-card>
-        <div class="card">
-            <img src="./../../../assets/img/{{item.name}}.jpg" alt="{{item.name}}">
+<div class=container-card>
+    <div class="card" *ngFor="let item of cast">
+        <img src="./../../../assets/img/{{item.name}}.jpg" alt="{{item.name}}">
+        <div class="body-card">
+            <h2>Name:  {{item.name}}</h2>
             <a href="{{item.bio.url}}" target="_blank">
-                <h2>Name: {{item.name}}</h2>
+                Link Bio: IMDB
             </a>
-            <h3>Born: {{item.born}}</h3>
-
+            <h3>Born:  {{item.born}}</h3>
         </div>
     </div>
 </div>
