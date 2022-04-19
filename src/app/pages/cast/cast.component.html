@@ -1,4 +1,4 @@
-<div class=container-card>
+<div class=container-card [ngClass]="className === 'light' ? 'dark-theme' : 'light-theme'">
     <div class="card" *ngFor="let item of cast">
         <img src="./../../../assets/img/{{item.name}}.jpg" alt="{{item.name}}">
         <div class="body-card">

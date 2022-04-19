@@ -11,6 +11,7 @@ import { HeaderComponent } from './pages/header/header.component';
 import { CastComponent } from './pages/cast/cast.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { ButtonComponent } from './pages/home/button/button.component';
 
 
 @NgModule({
@@ -23,7 +24,9 @@ import { FooterComponent } from './pages/footer/footer.component';
     CastComponent,
     LinkPipe,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    
+    ButtonComponent
     
   ],
   imports: [

@@ -1,3 +1,4 @@
+import { ThemeService } from './../../theme.service';
 import { CharactersService } from './service/characters.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -12,7 +13,12 @@ export class CharactersComponent implements OnInit {
     return this.searchCharacter.characters;
   }
 
-  constructor(private searchCharacter: CharactersService) { }
+  get className() {
+    return this.themeService.className;
+  }
+
+
+  constructor(private searchCharacter: CharactersService, private themeService: ThemeService) { }
 
   ngOnInit(): void {
 

@@ -1,11 +1,11 @@
 .container-gallery {
     display: flex;
     flex-wrap: wrap;
-    margin: 100px 0;
+    margin-top: 80px;
     width: 100%;
     gap: 2px;
     justify-content: space-around;
-    
+    padding: 25px 0;
 
     .container-card {
         display: flex;
@@ -55,6 +55,30 @@
         padding: 2px;
         font-family: 'Quicksand',
             sans-serif;
+    }
+
+
+    &.light-theme {
+        background-color: white;
+        transition: background-color 0.5s ease, color 0.5s ease;
+        color: #000000;
+
+    }
+
+    &.dark-theme {
+        color: #f1f1f1;
+        transition: background-color 0.5s ease, color 0.5s ease;
+        background-color: #000000;
+
+        .card-body {
+            background-color: grey;
+            color: black;
+        }
+
+        .card {
+            background-color: black;
+            border: 1px solid grey;
+        }
     }
 
 

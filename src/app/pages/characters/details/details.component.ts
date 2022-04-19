@@ -1,3 +1,4 @@
+import { ThemeService } from './../../../theme.service';
 import { ActivatedRoute } from '@angular/router';
 import { CharactersService } from './../service/characters.service';
 import { Characters } from './../../../interface/character.interface';
@@ -11,17 +12,20 @@ import { Component, OnInit } from '@angular/core';
 export class DetailsComponent implements OnInit {
 
 
+  character!: Characters
 
-character!: Characters
+  get className() {
+    return this.themeService.className;
+  }
 
-  constructor(private detailsService: CharactersService, private activeRoute: ActivatedRoute) { }
+  constructor(private detailsService: CharactersService, private activeRoute: ActivatedRoute, private themeService: ThemeService) { }
 
   ngOnInit(): void {
     this.activeRoute.params.subscribe((params) => {
       const { id } = params;
       this.character = this.detailsService.getDetailsById(id);
       console.log(this.character.images);
-      
+
     })
   }
 

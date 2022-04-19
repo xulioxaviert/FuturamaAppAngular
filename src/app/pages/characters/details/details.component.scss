@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 80px;
+    padding: 25px 0;
 
     .card {
         display: flex;
@@ -26,7 +27,7 @@
         padding: 0px 5%;
         text-align: center;
         font-family: 'Quicksand',
-        sans-serif;
+            sans-serif;
     }
 
     h4 {
@@ -37,7 +38,7 @@
         padding-bottom: 5px;
         padding-left: 5%;
         font-family: 'Quicksand',
-        sans-serif;
+            sans-serif;
     }
 
     p {
@@ -45,7 +46,34 @@
         margin-top: 2px;
         text-align: justify;
         font-family: 'Quicksand',
-        sans-serif;
+            sans-serif;
     }
+
+    &.light-theme {
+        background-color: white;
+        transition: background-color 0.5s ease, color 0.5s ease;
+        color: #000000;
+
+    }
+
+    &.dark-theme {
+        color: #f1f1f1;
+        transition: background-color 0.5s ease, color 0.5s ease;
+        background-color: #000000;
+
+        .card-body {
+            background-color: grey;
+            color: black;
+        }
+
+        .card {
+            background-color: black;
+            border: 1px solid grey;
+        }
+    }
+
+
+
+
 
 }

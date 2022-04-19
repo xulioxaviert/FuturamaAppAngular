@@ -1,4 +1,4 @@
-<div class="container-datails">
+<div class="container-datails" [ngClass]="className === 'light' ? 'dark-theme' : 'light-theme'">
             <div class="card">
             <img [src]="character.images.main" [alt]="character.name">
             <h2>Name: {{character.name.first}} {{character.name.middle}} {{character.name.last}}</h2>

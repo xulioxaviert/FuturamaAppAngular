@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 80px;
-    
+    background-color: white;
+
 
     h1 {
         font-family: 'Bebas Neue',
@@ -14,10 +15,8 @@
     .container-home-img {
         display: flex;
         width: 100%;
-      
-        
+
         img {
-            
             width: 100%;
         }
     }
@@ -25,11 +24,37 @@
     .container-home-paragraph {
         margin: 0 7%;
         text-align: justify;
+        background-color: #f1f1f1;
+        padding: 25px;
+        border-radius: 5px;
     }
 
     p {
         font-family: 'Quicksand',
             sans-serif;
     }
+
+    &.light-theme {
+        background-color: white;
+        transition: background-color 0.5s ease, color 0.5s ease;
+        color: #000000;
+    }
+
+    &.dark-theme {
+        color: #f1f1f1;
+        transition: background-color 0.5s ease, color 0.5s ease;
+        background-color: #000000;
+        .container-home-paragraph {
+            background-color: #000000;
+            p {
+                color: white;
+            }
+        }
+    }
+
+
+
+
+
 
 }

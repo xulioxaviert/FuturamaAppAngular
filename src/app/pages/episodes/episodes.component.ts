@@ -1,3 +1,4 @@
+import { ThemeService } from './../../theme.service';
 import { EpisodesService } from './service/episodes.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,9 +12,13 @@ export class EpisodesComponent implements OnInit {
   get episodes() {
     return this.episodesService.episodes
   }
-  
 
-  constructor(private episodesService: EpisodesService) { }
+  get className() {
+    return this.themeService.className;
+  }
+
+  
+  constructor(private episodesService: EpisodesService, private themeService: ThemeService) { }
 
   ngOnInit(): void {
 

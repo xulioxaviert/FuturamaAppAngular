@@ -1,4 +1,4 @@
-<div class=container-gallery>
+<div class=container-gallery [ngClass]="className === 'light' ? 'dark-theme' : 'light-theme'">
     <div *ngFor="let item of characters" class=container-card>
         <div [routerLink]="item | link" class="card">
             <img   src={{item.images.main}} [alt]="item.name.first">

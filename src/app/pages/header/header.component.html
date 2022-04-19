@@ -1,8 +1,12 @@
-<div class="container-nav">
+<div class="container-nav" [ngClass]="className === 'light' ? 'dark-theme' : 'light-theme'">
     <div class="nav">
         <a [routerLink]="['/home']">Home</a>
         <a [routerLink]="['/characters']">Characters</a>
         <a [routerLink]="['/episodes']">Episodes</a>
         <a [routerLink]="['/cast']">Cast</a>
+        
+    </div>
+    <div class="container-button">
+        <app-button (emitMessage)="setClassName($event)"></app-button>
     </div>
 </div>

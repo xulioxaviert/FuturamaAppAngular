@@ -1,5 +1,5 @@
 
-<div class="container-card">
+<div class="container-card" [ngClass]="className === 'light' ? 'dark-theme' : 'light-theme'">
     <div *ngFor="let item of episodes" class="card">
         
             <h2>Title: {{item.title}}</h2>

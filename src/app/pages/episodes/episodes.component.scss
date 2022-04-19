@@ -5,8 +5,9 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 10px;
-    margin-top: 125px;
+    margin-top: 80px;
     justify-content: space-evenly;
+    padding: 25px 0;
 
 
     .card {
@@ -22,13 +23,13 @@
 
     h2 {
         font-family: 'Quicksand',
-        sans-serif;
+            sans-serif;
     }
 
     h3 {
         padding: 0 5px;
         font-family: 'Quicksand',
-        sans-serif;
+            sans-serif;
         font-weight: bold;
         text-decoration: underline;
 
@@ -37,7 +38,7 @@
     p {
         padding: 0 10%;
         font-family: 'Quicksand',
-        sans-serif;
+            sans-serif;
     }
 
 
@@ -45,7 +46,36 @@
         margin: 0;
         padding: 3px 0;
         font-family: 'Quicksand',
-        sans-serif;
+            sans-serif;
     }
+
+    &.light-theme {
+        background-color: white;
+        transition: background-color 0.5s ease, color 0.5s ease;
+        color: #000000;
+
+    }
+
+    &.dark-theme {
+        color: white;
+        transition: background-color 0.5s ease, color 0.5s ease;
+        background-color: #000000;
+
+        .card-body {
+            background-color: grey;
+            color: black;
+        }
+
+        .card {
+            background-color: black;
+            border: 1px solid grey;
+        }
+
+        .container-card {
+            background-color: #000000;
+        }
+    }
+
+
 
 }

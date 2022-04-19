@@ -1,3 +1,4 @@
+import { ThemeService } from './../../theme.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+
+  get className() {
+    return this.themeService.className;
+  }
+
+  constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {
   }
