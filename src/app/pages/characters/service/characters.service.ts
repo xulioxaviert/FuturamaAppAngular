@@ -21,7 +21,6 @@ export class CharactersService {
 
   getDetailsById(_id: string): Characters {
     console.log(this.characters + 'aqui');
-       
     return this.characters.find(({ id }) => id == _id)
         
   }

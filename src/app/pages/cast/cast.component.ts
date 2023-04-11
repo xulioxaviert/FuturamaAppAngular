@@ -14,6 +14,7 @@ export class CastComponent implements OnInit {
     return this.castService.cast
   }
 
+  
   get className() {
     return this.themeService.className;
   }
